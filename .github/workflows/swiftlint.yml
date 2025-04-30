@@ -1,0 +1,30 @@
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  lint:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install SwiftLint
+        run: brew install swiftlint
+
+      - name: Run SwiftLint and save report
+        run: |
+          swiftlint > swiftlint-report.txt || true
+        continue-on-error: true
+
+      - name: Upload SwiftLint report
+        uses: actions/upload-artifact@v2
+        with:
+          name: SwiftLint-Report
+          path: swiftlint-report.txt
