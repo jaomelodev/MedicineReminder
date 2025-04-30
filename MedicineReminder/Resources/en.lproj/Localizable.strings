@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  MedicineReminder
+
+  Created by João Melo on 05/02/25.
+  
+*/
+/* MARK: - LOGIN Screen */
+"login.label.title" = "Entre para acessar suas receitas";
+"login.label.email" = "E-mail";
+"login.email.placeholder" = "email@examplo.com";
+"login.label.password" = "Senha";
+"login.password.placeholder" = "senha";
+"login.button.title" = "Entrar";
+
+/* MARK: - HOME Screen */
+"home.label.welcome" = "Boas vindas";
+"home.button.rate" = "  Avaliar";
+"home.textfield.name.placeholder" = "Insira seu nome";
+"home.homeButton.myReceipts.title" = "Minhas Receitas";
+"home.homeButton.myReceipts.description" = "Acompanhe os medicamentos e gerencie lembretes";
+"home.homeButton.newReceipt.title" = "Nova receita";
+"home.homeButton.newReceipt.description" = "Cadastre novos lembretes de receitas";
+
+/* MARK: - RECEIPTS Screen */
+
+/* MARK: - NEW RECEIPT Screen */
+"newReceipt.label.title" = "Nova receita";
+"newReceipt.label.description" = "Adicione a sua prescrição médica para receber lembretes de quando tomar seu medicamento";
+"newReceipt.button.add" = "+ Adicionar";
